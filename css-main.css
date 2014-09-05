@@ -1,0 +1,101 @@
+body {
+	background:#C1DFED;
+    background-image: url(img/cloud.jpg);
+    background-position: 0px 0px;
+	background-repeat:repeat;
+         animation: animatedClouds 60s linear infinite;
+			-ms-animation: animatedClouds 60s linear infinite;
+			-moz-animation: animatedClouds 60s linear infinite;
+  -webkit-animation:animatedClouds 60s infinite linear;
+
+}
+
+
+
+@keyframes animatedClouds {
+			from { background-position: 0 0; }
+			to { background-position: 0 500px; }
+		}
+	    @-webkit-keyframes animatedClouds {
+	        from {background-position:0 0;}
+	        to {background-position:0 500px;}
+        }
+		@-ms-keyframes animatedClouds {
+			from { background-position: 0 0; }
+			to { background-position: 0 500px; }
+		}
+		@-moz-keyframes animatedClouds {
+			from { background-position: 0 0; }
+			to { background-position: 0 500px; }
+}
+
+
+@keyframes animatedWaves {
+			from { background-position: 0 0; }
+			to { background-position: -1000px 0; }
+		}
+		@-webkit-keyframes animatedWaves {
+			from { background-position: 0 0; }
+			to { background-position: -1000px 0; }
+		}
+		@-ms-keyframes animatedWaves {
+			from { background-position: 0 0; }
+			to { background-position: -1000px 0; }
+		}
+		@-moz-keyframes animatedWaves {
+			from { background-position: 0 0; }
+			to { background-position: -1000px 0; }
+
+		}
+#content {
+    width:320px;
+    margin:auto;
+}
+
+#bucketlist {
+    width:163px;
+    height:236px;
+    margin: 120px auto 10px;
+    background:url(img/balloon.svg);    
+}
+
+#output {
+    text-align:center;
+    text-transform:uppercase;
+}
+
+@media only screen and (orientation:portrait) {
+    #bucketlist {
+        margin: 120px auto 10px;
+        background:url(img/balloon.svg);   
+    }
+    #output:after {
+        content:'Travel In Style';
+    }
+    body{
+        background-image: url(img/cloud.jpg);
+         animation: animatedClouds 60s linear infinite;
+			-ms-animation: animatedClouds 60s linear infinite;
+			-moz-animation: animatedClouds 60s linear infinite;
+  -webkit-animation:animatedClouds 60s infinite linear;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    #bucketlist {
+        width:242px;
+        height:150px;
+        margin: 80px auto 10px;
+        background:url(img/submarine.svg);   
+    }
+    #output:after {
+        content:'Swim with Fishes';
+    }
+    body {
+        background-image: url(img/water.jpg);
+        animation: animatedWaves 30s linear infinite;
+			-ms-animation: animatedWaves 30s linear infinite;
+			-moz-animation: animatedWaves 30s linear infinite;
+			-webkit-animation: animatedWaves 30s linear infinite;
+        }
+}
